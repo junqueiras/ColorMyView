@@ -14,11 +14,37 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setColorButtonsAction()
+        setBoxColor()
         }
 
-     private fun setColorButtonsAction() {
+    private fun setBoxColor() {
+        box_one_text.setOnClickListener{
+            box_one_text.setBackgroundResource(currentColor)
+//            ou it.setBackgroundColor(currentColor)
+        }
+
+        box_two_text.setOnClickListener{
+            box_two_text.setBackgroundResource(currentColor)
+        }
+
+        box_three_text.setOnClickListener{
+            box_three_text.setBackgroundResource(currentColor)
+        }
+
+        box_four_text.setOnClickListener{
+            box_four_text.setBackgroundResource(currentColor)
+        }
+
+        box_five_text.setOnClickListener{
+            box_five_text.setBackgroundResource(currentColor)
+        }
+    }
+
+
+    private fun setColorButtonsAction() {
         redButton.setOnClickListener {
             currentColor = R.color.red
+
         }
 
          yellowButton.setOnClickListener {
